@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
-
     <link href="./style.css" rel="stylesheet">
-    
 </head>
-<body class="h-full">
-    <header class="w-full flex justify-between items-center fixed p-3 z-100">
-        <p class="text-2xl font-archivo font-bold ml-3">Nolann Maunier</p>
-        <div class="border font-archivo mr-5 bg-black">but.</div>
-    </header>
-    <div class="h-screen flex max-sm:flex-col max-sm:flex-wrap max-sm:justify-evenly justify-evenly max-sm:items-center border border-blue-400 items-center pl-20 pr-20 max-sm:pl-0 max-sm:pr-0">
-        <p class="text-14xl max-sm:text-center leading-59 font-schabo pt-20">NOLANN <br> MAUNIER</p>
-        <p class="text-center align-middle font-archivo">Je suis étudiant en BUT Informatique et je recherche une alternance pour accompagner ma formation.<br>J’ai pour projet de devenir développeur logiciel en allant par la suite en école d’ingénieur.</p>
+<body class="h-screen flex flex-col overflow-hidden">
+
+  <header class="w-full fixed top-0 left-0 flex justify-between items-center p-3 z-50">
+
+    <p class="text-2xl font-archivo font-black ml-3 select-none">Nolann Maunier</p>
+
+    <!-- div pour le menu et son bouton -->
+    <div class="relative m-0 xl:mr-10">
+      <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+      <!-- bouton menu -->
+      <label for="menu-toggle" class="text-3xl cursor-pointer z-20 relative select-none">☰</label>
+      
+      <!-- fond noir transparent pour mettre en avant le menu quand on clique sur le bouton du menu -->
+      <div class="fixed inset-0 bg-black z-6 hidden peer-checked:block opacity-0 peer-checked:opacity-60"></div>
+
+      <!-- menu qui apparait quand on clique sur le bouton prévu à cet effet -->
+      <div class="fixed top-0 right-0 w-[400px] bg-white h-screen p-10 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-10">
+        <ul class="space-y-6 text-xl">
+          <li><a href="#" class="block select-none hover:underline">Formations</a></li>
+          <li><a href="#" class="block select-none hover:underline">Projets</a></li>
+          <li><a href="#" class="block select-none hover:underline">Contact</a></li>
+        </ul>
+      </div>
     </div>
+
+  </header>
+
+  <!-- contenu principale de la page-->
+  <main class="flex-1 flex flex-row justify-evenly items-center pt-20 max-xl:flex-col">
+
+    <p class="text-[18rem] leading-[15rem] font-schabo select-none xl:pl-4">NOLANN<br>MAUNIER</p>
     
-    <!--
-    <footer class="flex justify-center">footer</footer>
-    -->
+    <p class="font-archivo text-xl max-w-4xl px-4">
+      Je suis étudiant en BUT Informatique et je recherche une alternance pour accompagner ma formation. 
+      Je souhaite poursuivre mes études en informatique jusqu'au bout afin de devenir Ingénieur en Informatique.
+    </p>
+
+  </main>
+
+  <footer class="w-full py-3 text-center">
+    <div class="border-t border-black w-[80%] mx-auto">
+        <p class="pt-2 text-[0.6875rem]">made with ❤️ by Nolann</p>
+    </div>
+  </footer>
 </body>
 </html>
