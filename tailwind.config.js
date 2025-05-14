@@ -14,6 +14,7 @@ module.exports = {
         fontFamily: {
           archivo: ['Archivo', 'sans-serif'],
           schabo: ['"Schabo X Condensed"', 'sans-serif'],
+          schabo2: ['"Schabo Condensed"', 'sans-serif'],
         },
       },
     },

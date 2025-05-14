@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="w-full fixed top-0 left-0 flex justify-between items-center p-3 z-6 bg-white">
+    <a href="../../index.html" class="text-2xl font-archivo ml-3 select-none">Nolann Maunier.</a>
+
+    <!-- div pour le menu et son bouton -->
+    <div class="relative m-0 xl:mr-10">
+      <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+      <!-- bouton menu -->
+      <label for="menu-toggle" class="text-3xl cursor-pointer z-20 relative select-none">☰</label>
+      
+      <!-- fond noir transparent pour mettre en avant le menu quand on clique sur le bouton du menu -->
+      <div class="fixed inset-0 bg-black z-18 hidden peer-checked:block opacity-0 peer-checked:opacity-60"></div>
+
+      <!-- menu qui apparait quand on clique sur le bouton prévu à cet effet -->
+      <div class="fixed top-0 right-0 w-[400px] bg-white h-screen p-10 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-19 max-sm:w-[350px]">
+        <ul class="space-y-6 text-xl mt-10">
+          <li><a href="#" class="block select-none hover:underline">Formations</a></li>
+          <li><a href="main.html" class="block select-none underline">Projets</a></li>
+          <li><a href="#" class="block select-none hover:underline">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <main class="mx-30 mt-20">
+    <div>
+      <h1 class="font-schabo text-10xl select-none p-0 m-0">PROJETS</h1>
+    </div>
+    <div name="projet1" class="flex max-w-[42.75rem] border">
+      <img src="../images/img-project1.jpg" alt="Yahtzee game image" class="max-w-[21.375rem]">
+      <div name="project-description" class="ml-2 flec flex-col">
+        <p class="font-schabo2 text-3xl">Yahtzee (ou Yam's) en Java</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
