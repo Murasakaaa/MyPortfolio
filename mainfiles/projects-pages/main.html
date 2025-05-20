@@ -35,11 +35,59 @@
     <div>
       <h1 class="font-schabo text-10xl select-none p-0 m-0">PROJETS</h1>
     </div>
-    <div name="projet1" class="flex max-w-[42.75rem] border">
-      <img src="../images/img-project1.jpg" alt="Yahtzee game image" class="max-w-[21.375rem]">
-      <div name="project-description" class="ml-2 flec flex-col">
-        <p class="font-schabo2 text-3xl">Yahtzee (ou Yam's) en Java</p>
+    <!-- ligne 1 des projets -->
+    <div name="ligne1" class="flex justify-evenly">
+
+      <div name="projet1" class="flex max-w-[42.75rem] overflow-hidden">
+        <!-- fait en sorte que sur le hover la photo soit zoomée mais ne sorte pas de sa case-->
+        <div class="max-w-[21.375rem] overflow-hidden"> 
+          <img src="../images/img-project1.jpg" alt="Yahtzee game image" class="transition duration-300 hover:scale-110">
+        </div>
+        <div name="project-description" class="ml-5 flex flex-col">
+          <h2 name="project-title" class="font-schabo2 text-[2.5rem]">Yahtzee (ou Yam's) en Java</h2>
+          <p class="text-2xl">Lorem ipsum dolor sit amet consectetur. Quam enim pretium nam neque ultricies. Odio iaculis eu rutrum.</p>
+        </div>
       </div>
+
+      <div name="projet2" class="flex max-w-[42.75rem] overflow-hidden">
+        <!-- fait en sorte que sur le hover la photo soit zoomée mais ne sorte pas de sa case-->
+        <div class="max-w-[21.375rem] overflow-hidden"> 
+          <img src="../images/img-project1.jpg" alt="portfolio image" class="transition duration-300 hover:scale-110">
+        </div>
+        <div name="project-description" class="ml-5 flex flex-col">
+          <h2 name="project-title" class="font-schabo2 text-[2.5rem]">Portfolio</h2>
+          <p class="text-2xl">Lorem ipsum dolor sit amet consectetur. Quam enim pretium nam neque ultricies. Odio iaculis eu rutrum.</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- ligne 2 des projets -->
+     <div name="ligne2" class="flex justify-evenly my-10">
+
+      <div name="projet3" class="flex max-w-[42.75rem] overflow-hidden">
+        <!-- fait en sorte que sur le hover la photo soit zoomée mais ne sorte pas de sa case-->
+        <div class="max-w-[21.375rem] overflow-hidden"> 
+          <img src="../images/img-project3.jpg" alt="unesco image" class="transition duration-300 hover:scale-110">
+        </div>
+        <div name="project-description" class="ml-5 flex flex-col">
+          <h2 name="project-title" class="font-schabo2 text-[2.5rem]">Projet UNESCO</h2>
+          <p class="text-2xl">Lorem ipsum dolor sit amet consectetur. Quam enim pretium nam neque ultricies. Odio iaculis eu rutrum.</p>
+        </div>
+      </div>
+      <div name="projet4" class="flex max-w-[42.75rem] overflow-hidden">
+        <!-- fait en sorte que sur le hover la photo soit zoomée mais ne sorte pas de sa case-->
+        <div class="max-w-[21.375rem] overflow-hidden"> 
+          <img src="../images/img-project4.jpg" alt="Blackjack game image" class="transition duration-300 hover:scale-110">
+        </div>
+        <div name="project-description" class="ml-5 flex flex-col">
+          <h2 name="project-title" class="font-schabo2 text-[2.5rem]">Blackjack en Python</h2>
+          <p class="text-2xl mb-2">Lorem ipsum dolor sit amet consectetur. Quam enim pretium nam neque ultricies. Odio iaculis eu rutrum.</p>
+          <div name="tags" class="flex flex-wrap">
+            <span class="bg-gray-500 opacity-60 text-white rounded-lg p-2 select-none text-sm mx-2 mb-2">Python</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
