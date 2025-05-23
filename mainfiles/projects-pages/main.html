@@ -6,7 +6,7 @@
     <title>Projets</title>
     <link href="../style.css" rel="stylesheet">
 </head>
-<body>
+<body class="h-screen flex flex-col">
     <header class="w-full fixed top-0 left-0 flex justify-between items-center p-3 z-6 bg-white">
     <a href="../../index.html" class="text-2xl font-archivo ml-3 select-none">Nolann Maunier.</a>
 
@@ -36,19 +36,19 @@
       <h1 class="font-schabo text-10xl select-none p-0 m-0 max-sm:text-[7.5rem]">PROJETS</h1>
     </div>
     <!-- ligne 1 des projets -->
-    <div name="ligne1" class="flex xl:justify-evenly max-xl:flex-col max-xl:gap-8">
+    <div name="ligne1" class="flex mb-20 xl:justify-evenly max-xl:flex-col max-xl:gap-8">
 
       <div name="projet1" class="flex xl:max-w-[42.75rem] overflow-hidden max-md:flex-col max-xl:gap-2 max-md:items-center">
         <!-- fait en sorte que sur le hover la photo soit zoomée mais ne sorte pas de sa case-->
         <div class="w-[21.375rem] h-[21.375rem] overflow-hidden flex-shrink-0 aspect-square max-md:w-full max-md:h-full"> 
-          <a href="#"><img src="../images/imgp1.jpg" alt="Yahtzee game image" class="w-full h-full transition duration-300 hover:scale-110"></a>
+          <a href="./projects/yams.html"><img src="../images/imgp1.jpg" alt="Yahtzee game image" class="w-full h-full transition duration-300 hover:scale-110"></a>
         </div>
 
         <!-- description du projet -->
         <div class="xl:ml-5 flex flex-col">
 
           <!-- titre -->
-          <h2 class="font-schabo2 text-[2.5rem] max-md:text-[2.125rem]">Yahtzee (ou Yam's) en Java</h2>
+          <a href="./projects/yams.html"><h2 class="font-schabo2 text-[2.5rem] max-md:text-[2.125rem]">Yahtzee (ou Yam's) en Java</h2></a>
           <!-- courte description -->
           <p class="text-2xl max-md:text-[1.125rem]">Jeu de Yahtzee (ou Yam's) en Java, jouable entièrement via la ligne de commande.</p>
 
@@ -58,10 +58,6 @@
               <img src="../images/icons/icons8-logo-java-coffee-cup-32.png" alt="Java" class="w-5 h-5">
               <span>Java</span>
             </span>
-            <span class="bg-gray-500/60 text-white rounded-full px-3 py-1 text-sm flex items-center space-x-1.5">
-              <img src="../images/icons/icons8-java-eclipse-32.png" alt="Java" class="w-5 h-5">
-              <span>Eclipse</span>
-            </span>
           </div>
 
         </div>
@@ -70,14 +66,14 @@
       <div name="projet2" class="flex xl:max-w-[42.75rem] overflow-hidden max-md:flex-col max-xl:gap-2 max-md:items-center">
         <!-- fait en sorte que sur le hover la photo soit zoomée mais ne sorte pas de sa case-->
         <div class="w-[21.375rem] h-[21.375rem] overflow-hidden flex-shrink-0 aspect-square max-md:w-full max-md:h-full"> 
-          <a href="#"><img src="../images/imgp2.png" alt="Yahtzee game image" class="w-full h-full transition duration-300 hover:scale-110"></a>
+          <a href="./projects/seniorchat.html"><img src="../images/imgp2.png" alt="Yahtzee game image" class="w-full h-full transition duration-300 hover:scale-110"></a>
         </div>
 
         <!-- description du projet -->
         <div class="xl:ml-5 flex flex-col">
 
           <!-- titre -->
-          <h2 class="font-schabo2 text-[2.5rem] max-md:text-[2.125rem]">SeniorChat</h2>
+          <a href="./projects/seniorchat.html"><h2 class="font-schabo2 text-[2.5rem] max-md:text-[2.125rem]">SeniorChat</h2></a>
           <!-- courte description -->
           <p class="text-2xl max-md:text-[1.125rem]">Plateforme de messagerie entre séniors au sein d'une maison de retraite.</p>
 
@@ -109,6 +105,76 @@
       </div>
 
     </div>
+
+    <!-- ligne 2 des projets -->
+    <div name="ligne2" class="flex mb-20 xl:justify-evenly max-xl:flex-col max-xl:gap-8">
+
+      <div name="projet3" class="flex xl:max-w-[42.75rem] overflow-hidden max-md:flex-col max-xl:gap-2 max-md:items-center">
+        <!-- fait en sorte que sur le hover la photo soit zoomée mais ne sorte pas de sa case-->
+        <div class="w-[21.375rem] h-[21.375rem] overflow-hidden flex-shrink-0 aspect-square max-md:w-full max-md:h-full"> 
+          <a href="./projects/projet-unesco.html"><img src="../images/imgp3.jpg" alt="Yahtzee game image" class="w-full h-full transition duration-300 hover:scale-110"></a>
+        </div>
+
+        <!-- description du projet -->
+        <div class="xl:ml-5 flex flex-col">
+
+          <!-- titre -->
+          <a href="./projects/projet-unesco.html"><h2 class="font-schabo2 text-[2.5rem] max-md:text-[2.125rem]">Projet UNESCO</h2></a>
+          <!-- courte description -->
+          <p class="text-2xl max-md:text-[1.125rem]">Site web sur Kyoto et son patrimoine classé au patrimoine mondial de l'UNESCO</p>
+
+          <!-- tags -->
+          <div class="flex flex-wrap justify-start mt-5 font-archivo gap-2 select-none">
+            <span class="bg-gray-500/60 text-white rounded-full px-3 py-1 text-sm flex items-center space-x-1.5">
+              <img src="../images/icons/icons8-html-5-32.png" alt="Java" class="w-5 h-5">
+              <span>HTML</span>
+            </span>
+            <span class="bg-gray-500/60 text-white rounded-full px-3 py-1 text-sm flex items-center space-x-1.5">
+              <img src="../images/icons/icons8-css3-32.png" alt="Java" class="w-5 h-5">
+              <span>CSS</span>
+            </span>
+            <span class="bg-gray-500/60 text-white rounded-full px-3 py-1 text-sm flex items-center space-x-1.5">
+              <img src="../images/icons/icons8-php-32.png" alt="Java" class="w-5 h-5">
+              <span>PHP</span>
+            </span>
+            <span class="bg-gray-500/60 text-white rounded-full px-3 py-1 text-sm flex items-center space-x-1.5">
+              <img src="../images/icons/icons8-postgresql-32.png" alt="Java" class="w-5 h-5">
+              <span>PostgreSQL</span>
+            </span>
+            <span class="bg-gray-500/60 text-white rounded-full px-3 py-1 text-sm flex items-center space-x-1.5">
+              <img src="../images/icons/icons8-figma-32.png" alt="Java" class="w-5 h-5">
+              <span>Figma</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div name="projet4" class="flex xl:max-w-[42.75rem] overflow-hidden max-md:flex-col max-xl:gap-2 max-md:items-center">
+        <!-- fait en sorte que sur le hover la photo soit zoomée mais ne sorte pas de sa case-->
+        <div class="w-[21.375rem] h-[21.375rem] overflow-hidden flex-shrink-0 aspect-square max-md:w-full max-md:h-full"> 
+          <a href="./projects/blackjack-python.html"><img src="../images/imgp4.jpg" alt="Yahtzee game image" class="w-full h-full transition duration-300 hover:scale-110"></a>
+        </div>
+
+        <!-- description du projet -->
+        <div class="xl:ml-5 flex flex-col">
+
+          <!-- titre -->
+          <a href="./projects/blackjack-python.html"><h2 class="font-schabo2 text-[2.5rem] max-md:text-[2.125rem]">Blackjack en Python</h2></a>
+          <!-- courte description -->
+          <p class="text-2xl max-md:text-[1.125rem]">Jeu du Blackjack en Python, jouable entièrement via la ligne de commande</p>
+
+          <!-- tags -->
+          <div class="flex flex-wrap justify-start mt-5 font-archivo gap-2 select-none">
+            <span class="bg-gray-500/60 text-white rounded-full px-3 py-1 text-sm flex items-center space-x-1.5">
+              <img src="../images/icons/icons8-python-32.png" alt="Python" class="w-5 h-5">
+              <span>Python</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="w-full py-3 text-center">
@@ -119,4 +185,4 @@
 </body>
 </html>
 
-<!-- seniorchat, Projet UNESCO, Blackjack en python-->
+<!--Blackjack en python-->
