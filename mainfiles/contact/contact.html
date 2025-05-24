@@ -9,30 +9,30 @@
 <body class="overflow-x-hidden">
     <header class="w-full fixed top-0 left-0 flex justify-between items-center p-3 z-6 bg-white">
 
-    <a href="../../index.html" class="text-2xl font-archivo ml-3 select-none">Nolann Maunier.</a>
+        <a href="../../index.html" class="text-2xl font-archivo ml-3 select-none">Nolann Maunier.</a>
 
-    <!-- div pour le menu et son bouton -->
-    <div class="relative m-0 xl:mr-10">
-      <input type="checkbox" id="menu-toggle" class="hidden peer">
+        <!-- div pour le menu et son bouton -->
+        <div class="relative m-0 xl:mr-10">
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
 
-      <!-- bouton menu -->
-      <label for="menu-toggle" class="text-3xl cursor-pointer z-20 relative select-none">☰</label>
-      
-      <!-- fond noir transparent pour mettre en avant le menu quand on clique sur le bouton du menu -->
-      <div class="fixed inset-0 bg-black z-18 hidden peer-checked:block opacity-0 peer-checked:opacity-60"></div>
+        <!-- bouton menu -->
+        <label for="menu-toggle" class="text-3xl cursor-pointer z-20 relative select-none">☰</label>
+        
+        <!-- fond noir transparent pour mettre en avant le menu quand on clique sur le bouton du menu -->
+        <div class="fixed inset-0 bg-black z-18 hidden peer-checked:block opacity-0 peer-checked:opacity-60"></div>
 
-      <!-- menu qui apparait quand on clique sur le bouton prévu à cet effet -->
-      <div class="fixed top-0 right-0 w-[400px] bg-white h-screen p-10 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-19 max-sm:w-[350px]">
-        <ul class="space-y-6 text-xl mt-10">
-          <li><a href="../academic-background/#" class="block select-none hover:underline">Formations</a></li>
-          <li><a href="../projects-pages/main.html" class="block select-none hover:underline">Projets</a></li>
-          <li><a href="contact.html" class="block select-none underline">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+        <!-- menu qui apparait quand on clique sur le bouton prévu à cet effet -->
+        <div class="fixed top-0 right-0 w-[400px] bg-white h-screen p-10 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-19 max-sm:w-[350px]">
+            <ul class="space-y-6 text-xl mt-10">
+            <li><a href="../academic-background/#" class="block select-none hover:underline">Formations</a></li>
+            <li><a href="../projects-pages/main.html" class="block select-none hover:underline">Projets</a></li>
+            <li><a href="contact.html" class="block select-none underline">Contact</a></li>
+            </ul>
+        </div>
+        </div>
   </header>
   <main class="flex flex-col xl:mx-30 mt-20 mx-10">
-    <div class="flex">
+    <div>
       <h1 class="font-schabo text-10xl select-none p-0 m-0 max-sm:text-[7.5rem]">CONTACT</h1>
     </div>
     <div class="flex justify-center mb-10 sm:mb-20">
@@ -41,8 +41,8 @@
 
                 <input type="hidden" name="access_key" value="01739e99-27cd-4a54-938f-0a25bc1e63b2">
 
-                <input class="mb-5 sm:mb-10 shadow appearance-none border border-gray-500 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" type="text" placeholder="Nom et prénom">
-                <input class="mb-5 sm:mb-10 shadow appearance-none border border-gray-500 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="mail" type="text" placeholder="mail@mail.com">
+                <input class="mb-5 sm:mb-10 shadow appearance-none border border-gray-500 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" type="text" placeholder="Nom et prénom" required>
+                <input class="mb-5 sm:mb-10 shadow appearance-none border border-gray-500 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="mail" type="email" placeholder="mail@mail.com" required>
                 <textarea class="mb-2 sm:mb-5 min-h-40 resize-none shadow appearance-none border border-gray-500 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="message" id="message" placeholder="Votre message" required></textarea>
                 
                 <!-- Honeypot Spam Protection -->
