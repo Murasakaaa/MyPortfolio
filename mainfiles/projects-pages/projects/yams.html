@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet Yam's</title>
     <link rel="stylesheet" href="../../style.css">
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
     <header class="w-full top-0 flex justify-end p-5 z-6 bg-white">
         <a href="../main.html" class="xl:mr-5"><img src="../../images/icons/icons8-close-32.png" alt="close icon" class="max-sm:w-5 max-sm:h-5"></a>
     </header>
     <hr class="mx-5 mb-5 xl:mx-30 xl:mb-10">
 
-    <main class="flex mx-5 gap-12 xl:mx-30 max-[61.875rem]:flex-col-reverse">
-        <div class="flex-4/7 flex-shrink-0 aspect-square w-full h-full"> 
-            <img src="../../images/imgp1.jpg" alt="Illustration 1" class="w-full h-full object-cover inset-0">
+    <main class="flex-grow flex mx-5 gap-12 xl:mx-30 max-[61.875rem]:flex-col-reverse">
+        <div class="flex flex-col flex-4/7 gap-2 w-full">
+            <img src="../../images/imgp1.jpg" alt="Illustration 1" class="w-full object-cover">
+            <img src="../../images/imgp1.jpg" alt="Illustration 1" class="w-full object-cover">
         </div>
         <div class="font-archivo text-[1rem] max-sm:text-[0.875rem] flex-3/7">
-            <h1 class="font-schabo2 text-6xl mb-2 max-sm:text-5xl">Projet Yam's</h1>
+            <div class="flex justify-between gap-10 mb-2">
+                <h1 class="font-schabo2 text-6xl max-sm:text-5xl">Projet Yam's</h1>
+                <div class="my-1 sm:my-3">
+                    <a href="https://github.com/Murasakaaa/Yahtzee-game-java" target="_blank"><img src="../../images/icons/icons8-github-32.png" alt="logo github" class=" border rounded-[10px] select-none"></a>
+                </div>
+            </div>
+            
             <p>Il s'agit d'un jeu de Yahtzee (ou Yam's) en Java, jouable entièrement via la ligne de commande.</p>
             <p class="mb-5">Ce projet, développé en binôme sur un semestre, avait pour objectif de mettre en pratique les concepts de la programmation orientée objet en Java.</p>
             <p class="mb-2 underline">Voici une courte description du projet :</p>
@@ -47,7 +54,7 @@
     </main>
     <hr class="mx-5 mt-5 xl:mx-30 xl:mt-10">
 
-    <footer class="flex mx-10 py-3 xl:mx-30 justify-between">
+    <footer class="flex mx-5 pb-2 sm:py-3 xl:mx-30 justify-between">
         <p class="pt-2 text-[0.6875rem] max-sm:text-[0.5625rem]">made with ❤️ by Nolann</p>
         <p class="pt-2 text-[0.6875rem] max-sm:text-[0.5625rem]">Jeu de Yahtzee (ou Yam's) en Java</p>
         <p class="pt-2 text-[0.6875rem] max-sm:text-[0.5625rem]">Icons by <a target="_blank" href="https://icones8.fr/icons" class="underline hover:text-green-700">Icons8</a></p>
