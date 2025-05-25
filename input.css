@@ -11,6 +11,13 @@
 @font-face {
   font-family: 'Archivo';
   src: url('./fonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Schabo Condensed';
+  src: url('./fonts/SCHABO-Condensed.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

@@ -10,7 +10,7 @@
 
   <header class="w-full fixed top-0 left-0 flex justify-between items-center p-3 z-6 bg-white">
 
-    <p class="text-2xl font-archivo ml-3 select-none">Nolann Maunier</p>
+    <a href="index.html" class="text-2xl font-archivo ml-3 select-none">Nolann Maunier.</a>
 
     <!-- div pour le menu et son bouton -->
     <div class="relative m-0 xl:mr-10">
@@ -23,11 +23,11 @@
       <div class="fixed inset-0 bg-black z-18 hidden peer-checked:block opacity-0 peer-checked:opacity-60"></div>
 
       <!-- menu qui apparait quand on clique sur le bouton prévu à cet effet -->
-      <div class="fixed top-0 right-0 w-[400px] bg-white h-screen p-10 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-19">
-        <ul class="space-y-6 text-xl">
-          <li><a href="#" class="block select-none hover:underline">Formations</a></li>
-          <li><a href="#" class="block select-none hover:underline">Projets</a></li>
-          <li><a href="#" class="block select-none hover:underline">Contact</a></li>
+      <div class="fixed top-0 right-0 w-[400px] bg-white h-screen p-10 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-19 max-sm:w-[350px]">
+        <ul class="space-y-6 text-xl mt-10">
+          <li><a href="./mainfiles/academic-background/education-timeline.html" class="block select-none hover:underline">Formations</a></li>
+          <li><a href="./mainfiles/projects-pages/main.html" class="block select-none hover:underline">Projets</a></li>
+          <li><a href="./mainfiles/contact/contact.html" class="block select-none hover:underline">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -35,9 +35,9 @@
   </header>
 
   <!-- contenu principale de la page-->
-  <main class="flex-1 flex flex-row justify-evenly items-center pt-20 max-xl:flex-col">
+  <main class="flex-1 flex flex-row mt-20 justify-evenly xl:items-center max-xl:flex-col sm:justify-evenly">
 
-    <p class="text-[18rem] leading-[15rem] font-schabo select-none xl:pl-4 sm:max-md:text-[16rem] sm:max-md:leading-[13rem] max-sm:text-[12rem] max-sm:leading-[10rem]">NOLANN<br>MAUNIER</p>
+    <p class="text-[18rem] leading-[15rem] font-schabo select-none xl:pl-4 sm:max-md:text-[16rem] sm:max-md:leading-[13rem] max-sm:text-[12rem] max-sm:leading-[10rem] max-xl:mx-3">NOLANN<br>MAUNIER</p>
     
     <p class="font-archivo text-xl max-w-4xl px-4 max-md:text-[0.875rem] max-sm:mt-0">
       Je suis étudiant en BUT Informatique et je recherche une alternance pour accompagner ma formation. 
@@ -46,9 +46,9 @@
 
   </main>
 
-  <footer class="w-full py-3 text-center">
+  <footer class="w-full py-3 text-center font-archivo">
     <div class="border-t border-black w-[80%] mx-auto">
-        <p class="pt-2 text-[0.6875rem]">made with ❤️ by Nolann</p>
+        <p class="pt-2 text-[0.6875rem] max-sm:text-[0.5625rem]">made with ❤️ by Nolann</p>
     </div>
   </footer>
 </body>

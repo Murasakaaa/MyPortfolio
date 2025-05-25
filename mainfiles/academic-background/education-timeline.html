@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Formations</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="w-full fixed top-0 left-0 flex justify-between items-center p-3 z-6 bg-white">
+
+        <a href="../../index.html" class="text-2xl font-archivo ml-3 select-none">Nolann Maunier.</a>
+
+        <!-- div pour le menu et son bouton -->
+        <div class="relative m-0 xl:mr-10">
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+        <!-- bouton menu -->
+        <label for="menu-toggle" class="text-3xl cursor-pointer z-20 relative select-none">☰</label>
+        
+        <!-- fond noir transparent pour mettre en avant le menu quand on clique sur le bouton du menu -->
+        <div class="fixed inset-0 bg-black z-18 hidden peer-checked:block opacity-0 peer-checked:opacity-60"></div>
+
+        <!-- menu qui apparait quand on clique sur le bouton prévu à cet effet -->
+        <div class="fixed top-0 right-0 w-[400px] bg-white h-screen p-10 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-19 max-sm:w-[350px]">
+            <ul class="space-y-6 text-xl mt-10">
+            <li><a href="education-timeline.html" class="block select-none underline">Formations</a></li>
+            <li><a href="../projects-pages/main.html" class="block select-none hover:underline">Projets</a></li>
+            <li><a href="../contact/contact.html" class="block select-none hover:underline">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+  </header>
+
+  <main class="mt-20 mx-10 xl:mx-30 font-archivo">
+    <div>
+      <h1 class="font-schabo text-10xl select-none p-0 m-0 max-sm:text-[7.5rem]">FORMATIONS</h1>
+    </div>
+    <!-- timeline des mes formations -->
+    <div class="relative">
+        <!-- ligne de la timeline -->
+        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-500 bg-diagonal-fade transform -translate-x-1/2 h-full sm:max-h-[25rem] max-[400px]:max-h-[30rem] min400:max-sm:max-h-[27rem]"></div>
+
+        <!-- 1 -->
+        <div class="flex flex-col mb-15 relative">
+            <!-- date -->
+            <div class="w-16 h-16 rounded-full bg-white border border-gray-300 flex items-center justify-center font-archivo z-2 mr-5 flex-shrink-0 text-center leading-tight">
+                2024-2027
+            </div>
+            <!-- contenu -->
+            <div class="flex-1 ml-20 mt-[-2.5rem] max-md:mt-[-3rem]">
+                <h2 class="font-schabo2 text-5xl mb-2.5 max-md:text-3xl">BUT Informatique</h2>
+                <p class="text-gray-500 mb-4 w-full text-[1rem] max-md:text-[0.875rem]">IUT de Marne-la-Vallée - Université Gustave Eiffel. <br> Parcours réalisation d'applications : conception, développement, validation.</p>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="flex flex-col mb-15 relative">
+            <!-- date -->
+            <div class="w-16 h-16 rounded-full bg-white border border-gray-300 flex items-center justify-center font-archivo z-2 mr-5 flex-shrink-0 text-center leading-tight">
+                2024
+            </div>
+            <!-- contenu -->
+            <div class="flex-1 ml-20 mt-[-2.5rem] max-md:mt-[-3rem]">
+                <h2 class="font-schabo2 text-5xl mb-2.5 max-md:text-3xl">Cambridge English Certificate</h2>
+                <p class="text-gray-500 mb-4 w-full text-[1rem] max-md:text-[0.875rem]">Obtention du Cambridge English Certificate (CEC)</p>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="flex flex-col mb-20 relative">
+            <!-- date -->
+            <div class="w-16 h-16 rounded-full bg-white border border-gray-300 flex items-center justify-center font-archivo z-2 mr-5 flex-shrink-0 text-center leading-tight">
+                2021-2024
+            </div>
+            <!-- contenu -->
+            <div class="flex-1 ml-20 mt-[-2.5rem] max-md:mt-[-3rem]">
+                <h2 class="font-schabo2 text-5xl mb-2.5 max-md:text-3xl">Baccalauréat général</h2>
+                <p class="text-gray-500 mb-4 w-full text-[1rem] max-md:text-[0.875rem]">Baccalauréat général avec mention - options NSI et Mathématiques - Lycée Émilie du Châtelet</p>
+            </div>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
