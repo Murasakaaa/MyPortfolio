@@ -6,7 +6,7 @@
     "dev": "tailwindcss -i ./input.css -o ./mainfiles/style.css --watch --optimize"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nolann",
   "license": "ISC",
   "description": "",
   "devDependencies": {
