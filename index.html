@@ -6,9 +6,9 @@
     <title>Accueil</title>
     <link href="./mainfiles/style.css" rel="stylesheet">
 </head>
-<body class="h-screen flex flex-col bg-honeydew">
+<body class="h-screen flex flex-col bg-mint_cream">
 
-  <header class="w-full fixed top-0 left-0 flex justify-between items-center p-3 z-6 bg-honeydew shadow-lg">
+  <header class="w-full fixed top-0 left-0 flex justify-between items-center p-3 z-6 bg-mint_cream border-b-2 border-rich_black">
 
     <a href="index.html" class="text-2xl text-rich_black font-archivo ml-3 select-none">Nolann Maunier.</a>
 
@@ -23,7 +23,7 @@
       <div class="fixed inset-0 bg-black z-18 hidden peer-checked:block opacity-0 peer-checked:opacity-60"></div>
 
       <!-- menu qui apparait quand on clique sur le bouton prévu à cet effet -->
-      <div class="fixed top-0 right-0 w-[400px] bg-white h-screen p-10 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-19 max-sm:w-[350px]">
+      <div class="fixed top-0 right-0 w-[400px] bg-mint_cream h-screen p-10 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-19 max-sm:w-[350px]">
         <ul class="space-y-6 text-xl mt-10">
           <li><a href="./mainfiles/academic-background/education-timeline.html" class="block select-none hover:underline">Formations</a></li>
           <li><a href="./mainfiles/projects-pages/main.html" class="block select-none hover:underline">Projets</a></li>
@@ -35,27 +35,40 @@
   </header>
 
   <!-- contenu principale de la page-->
-  <main class="flex-1 flex flex-row mt-20 justify-evenly xl:items-center max-xl:flex-col sm:justify-evenly">
+  <main class="flex-1 flex flex-col mx-5 gap-20 mt-20 xl:items-start border-1">
+    <section>
+      
+      <div class="grid grid-cols-2 auto-rows-auto gap-2">
+          <div class="font-archivo text-rich_black text-[2.125rem] leading-10">
+            Je suis étudiant en BUT Informatique et je recherche une alternance pour accompagner ma formation. 
+            Je souhaite poursuivre mes études en informatique jusqu'au bout afin de devenir Ingénieur en Informatique.
+          </div>
+          <div class="row-start-2 font-archivo text-rich_black">
+            <div class="group border-2 border-rich_black rounded-[5px] w-fit flex items-center gap-2 px-3 py-2 
+                        hover:bg-rich_black text-rich_black hover:text-white cursor-pointer transition-colors duration-300">
+              <p class="font-archivo text-[2.375rem]">MON CV</p>
+              <img src="./mainfiles/images/icons/icons8-download-32.png" alt="dl_icon" class="w-8 h-8 group-hover:invert">
+            </div>
+          </div>
 
-    <p class="
-      text-[18rem] leading-[15rem] font-schabo select-none text-rich_black
-      xl:pl-4 sm:max-md:text-[16rem] sm:max-md:leading-[13rem] max-sm:text-[12rem] max-sm:leading-[10rem] max-xl:mx-3"
-    >
-      NOLANN<br>MAUNIER
-    </p>
+          <div class="row-start-2 border">
+            <div class="flex justify-end gap-2 px-3 py-2">
+              <img src="./mainfiles/images/icons/icons8-linkedin-32.png" alt="icon_linkedin" class="w-8 h-8 group-hover:invert">
+              <img src="./mainfiles/images/icons/icons8-github-32.png" alt="icon_github" class="w-10 h-10 group-hover:invert"> <!--prendre une plus grande résolution pour ces icones la-->
+            </div>
+          </div>
+          <div class="col-span-2 row-start-3 
+            font-schabo text-rich_black text-[36rem] leading-[15rem] select-none border mt-100 mb-10">
+            NOLANN MAUNIER
+          </div>
+      </div>
     
-    <p class="
-    font-archivo text-xl max-w-4xl px-4 text-rich_black
-    max-md:text-[0.875rem] max-sm:mt-0"
-    >
-      Je suis étudiant en BUT Informatique et je recherche une alternance pour accompagner ma formation. 
-      Je souhaite poursuivre mes études en informatique jusqu'au bout afin de devenir Ingénieur en Informatique.
-    </p>
+    </section>
 
   </main>
 
   <footer class="w-full py-3 text-center font-archivo">
-    <div class="border-t border-rich_black w-[80%] mx-auto">
+    <div class="border-t-2 border-rich_black mx-auto"> <!--w-[80%]-->
         <p class="pt-2 text-[0.6875rem] max-sm:text-[0.5625rem] text-rich_black">made with ❤️ by Nolann</p>
     </div>
   </footer>

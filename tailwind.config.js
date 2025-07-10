@@ -1,9 +1,9 @@
 // tailwind.config.js
 module.exports = {
-    content: ["./*.html", "./mainfiles/**/*.{js,html}"],
-    theme: {
-      extend: {
-        backgroundImage: {
+  content: ["./*.html", "./mainfiles/**/*.{js,html}"],
+  theme: {
+    extend: {
+      backgroundImage: {
         'diagonal-fade': 'linear-gradient(45deg, transparent, black, transparent)',
       },
       colors: {
@@ -19,17 +19,17 @@ module.exports = {
           800: '#72b4cb',
           900: '#b8dae5',
         },
-        honeydew: {
-          DEFAULT: '#f0fff0',
-          100: '#006300',
-          200: '#00c600',
-          300: '#2aff2a',
-          400: '#8dff8d',
-          500: '#f0fff0',
-          600: '#f3fff3',
-          700: '#f6fff6',
-          800: '#f9fff9',
-          900: '#fcfffc',
+        mint_cream: {
+          DEFAULT: '#f4faf4',
+          100: '#1f441f',
+          200: '#3e883e',
+          300: '#6dbc6d',
+          400: '#b1dbb1',
+          500: '#f4faf4',
+          600: '#f7fbf7',
+          700: '#f9fcf9',
+          800: '#fbfdfb',
+          900: '#fdfefd',
         },
         tea_green: {
           DEFAULT: '#d6f7ad',
@@ -59,21 +59,20 @@ module.exports = {
       screens: {
         'min400': '400px',
       },
-        fontSize: {
-          '10xl': '10rem', // 160px
-          '11xl': '12rem', // 192px
-          '12xl': '14rem', // 224px
-          '13xl': '16rem',
-          '14xl': '18rem',
-          '15xl': '20rem',
-        },
-        fontFamily: {
-          archivo: ['Archivo', 'sans-serif'],
-          schabo: ['"Schabo X Condensed"', 'sans-serif'],
-          schabo2: ['"Schabo Condensed"', 'sans-serif'],
-        },
+      fontSize: {
+        '10xl': '10rem',
+        '11xl': '12rem',
+        '12xl': '14rem',
+        '13xl': '16rem',
+        '14xl': '18rem',
+        '15xl': '20rem',
+      },
+      fontFamily: {
+        archivo: ['Archivo', 'sans-serif'],
+        schabo: ['"Schabo X Condensed"', 'sans-serif'],
+        schabo2: ['"Schabo Condensed"', 'sans-serif'],
       },
     },
-    plugins: [],
-  }
-  
+  },
+  plugins: [],
+}

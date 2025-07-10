@@ -1,0 +1,14 @@
+<p class="
+      text-[35rem] leading-[15rem] font-schabo select-none text-rich_black
+      xl:px-4 sm:max-md:text-[16rem] sm:max-md:leading-[13rem] max-sm:text-[12rem] max-sm:leading-[10rem] max-xl:mx-3 border-2 border-red-500"
+    >
+      NOLANN MAUNIER
+    </p>
+    
+    <p class="
+    font-archivo text-xl max-w-4xl px-4 text-rich_black
+    max-md:text-[0.875rem] max-sm:mt-0 border-2 border-red-500"
+    >
+      Je suis étudiant en BUT Informatique et je recherche une alternance pour accompagner ma formation. 
+      Je souhaite poursuivre mes études en informatique jusqu'au bout afin de devenir Ingénieur en Informatique.
+    </p>
