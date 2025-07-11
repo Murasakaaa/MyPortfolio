@@ -10,7 +10,7 @@
 
   <header class="w-full fixed top-0 left-0 flex justify-between items-center p-3 z-6 bg-mint_cream border-b-2 border-rich_black">
 
-    <a href="index.html" class="text-2xl text-rich_black font-archivo ml-3 select-none">Nolann Maunier.</a>
+    <a href="index.html" class="text-[2.5rem] text-rich_black font-archivo ml-3 select-none">Nolann Maunier.</a>
 
     <!-- div pour le menu et son bouton -->
     <div class="relative m-0 xl:mr-10">
@@ -35,31 +35,44 @@
   </header>
 
   <!-- contenu principale de la page-->
-  <main class="flex-1 flex flex-col mx-5 gap-20 mt-20 xl:items-start border-1">
-    <section>
-      
+  <main class="flex-1 flex flex-col mx-10 gap-20 mt-20 xl:items-start">
+    <section class="mt-5">
       <div class="grid grid-cols-2 auto-rows-auto gap-2">
-          <div class="font-archivo text-rich_black text-[2.125rem] leading-10">
+
+          <!--1st cell with short intro-->
+          <div class="font-archivo text-rich_black text-[1.875rem] leading-10">
             Je suis étudiant en BUT Informatique et je recherche une alternance pour accompagner ma formation. 
             Je souhaite poursuivre mes études en informatique jusqu'au bout afin de devenir Ingénieur en Informatique.
           </div>
-          <div class="row-start-2 font-archivo text-rich_black">
-            <div class="group border-2 border-rich_black rounded-[5px] w-fit flex items-center gap-2 px-3 py-2 
-                        hover:bg-rich_black text-rich_black hover:text-white cursor-pointer transition-colors duration-300">
-              <p class="font-archivo text-[2.375rem]">MON CV</p>
-              <img src="./mainfiles/images/icons/icons8-download-32.png" alt="dl_icon" class="w-8 h-8 group-hover:invert">
+
+          <!--2nd cell with download button-->
+          <div class="row-start-2 font-archivo text-rich_black flex items-center mt-30">
+            <div class="group border-2 border-rich_black rounded-[0.313rem] w-fit flex items-center gap-2 px-3 py-2 
+                        hover:bg-rich_black text-rich_black hover:text-mint_cream cursor-pointer transition-colors duration-300">
+              <p class="font-archivo text-[2.5rem]">MON CV</p>
+              <img src="./mainfiles/images/icons/download_arrow.svg" alt="dl_icon" class="w-19 h-9/12 group-hover:invert">
             </div>
           </div>
 
-          <div class="row-start-2 border">
-            <div class="flex justify-end gap-2 px-3 py-2">
-              <img src="./mainfiles/images/icons/icons8-linkedin-32.png" alt="icon_linkedin" class="w-8 h-8 group-hover:invert">
-              <img src="./mainfiles/images/icons/icons8-github-32.png" alt="icon_github" class="w-10 h-10 group-hover:invert"> <!--prendre une plus grande résolution pour ces icones la-->
-            </div>
+          <!--3rd cell with icons buttons-->
+          <div class="row-start-2 flex justify-end gap-2 px-3 py-2 mt-30">
+              <div class="border-2 rounded-[0.313rem] group hover:bg-rich_black transition-colors duration-300">
+                <img src="./mainfiles/images/icons/github-mark.svg" alt="icon_github" class="w-19 h-19 p-1">
+              </div>
+              <div class="border-2 rounded-[5px] group hover:bg-rich_black transition-colors duration-300">
+                <img src="./mainfiles/images/icons/github-mark.svg" alt="icon_github" class="w-19 h-19 p-1">
+              </div>
           </div>
-          <div class="col-span-2 row-start-3 
-            font-schabo text-rich_black text-[36rem] leading-[15rem] select-none border mt-100 mb-10">
-            NOLANN MAUNIER
+
+          <!--4th cell with big name-->
+          <div class="col-span-2 row-start-3
+            font-schabo text-rich_black text-[36.063rem] leading-[15rem] mx-auto select-none mt-43">
+            <p>NOLANN MAUNIER</p>
+          </div>
+
+          <!--5th cell with arrow towards the bottom-->
+          <div class="col-span-2 row-start-4 flex justify-center my-[2.875rem]">
+            <img src="./mainfiles/images/icons/DownArrow.svg" alt="down_arrow" class="w-10">
           </div>
       </div>
     
@@ -68,7 +81,7 @@
   </main>
 
   <footer class="w-full py-3 text-center font-archivo">
-    <div class="border-t-2 border-rich_black mx-auto"> <!--w-[80%]-->
+    <div class="border-t-2 border-rich_black mx-auto">
         <p class="pt-2 text-[0.6875rem] max-sm:text-[0.5625rem] text-rich_black">made with ❤️ by Nolann</p>
     </div>
   </footer>
